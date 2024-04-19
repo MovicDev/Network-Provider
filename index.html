@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+<div class="p-4 lg:ml-64 bg-slate-400 h-screen">
+   
+
+<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-20 mx-auto">
+  <div>
+      <img class=" mx-auto  my-3" src="/0e74e4ee74658fd9e8fb5a7a2b73634f.jpg" alt="" id="mtn" style="display: none;"/>
+      <img class=" mx-auto  my-3" src="/6d3b84e3dde217e76502c6f89cf7d08b.jpg" alt="" id="glo"  style="display: none;"/>
+      <img class=" mx-auto  my-3" src="/86b08422a78eb7a5f9485d570e06078c.jpg" alt="" id="airtel" style="display: none;"/>
+      <img class=" mx-auto  my-3" src="/af6d090c4f2266582e07366ae5a8a307.jpg" alt="" id="mobi"  style="display: none;"/>
+  </div>
+  <div class="p-5">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">NetWork Provider</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Incase you don't know the network provider of a number. This website will help you figure out which the network does the number belong too</p>
+      <p><span class="text-red-200 font-bold">Notice!</span> Don't start with +234</p>
+      
+<form class="max-w-xs mx-auto">
+  <div class="relative">
+      <span class="absolute start-0 bottom-3 text-gray-500 dark:text-gray-400">
+          <svg class="w-4 h-4 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+              <path d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z"/>
+          </svg>
+      </span>
+      <input type="text" id="floating-phone-number" placeholder="+234...." class="block py-2.5 ps-6 pe-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" " />
+      <label for="floating-phone-number" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:start-6 peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone number</label>
+  </div>
+  <div id="displayNetwork" class="text-center"></div>
+</form>
+
+
+<button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 mt-6" onclick="check()">check Network</button>
+  </div>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
